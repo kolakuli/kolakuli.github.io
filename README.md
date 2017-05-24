@@ -1,3 +1,6 @@
+[Kolakuli](http://kolakuli.github.io).
+
+/**
 # Jekyll Metro
 
 Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
@@ -53,3 +56,4 @@ You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](htt
 Open sourced under the [MIT license](LICENSE.md).
 
 <3
+**/
