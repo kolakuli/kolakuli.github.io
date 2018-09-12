@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia;
+    background-color:orange;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    color:green;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.bottomleft {
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+    color: green;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color:white;
+    font-size: 16px;
+}
+.h2 {
+    text-align:center;
+    color:blue;
+     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>A picture is worth a thousand words</h1>
+  <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+<div class="column">
+<h2 class="h2">AP</h2>
+
+<img src="https://storage.googleapis.com/afs-prod/media/media:4ab766da0ef441b3b960d5854b9d48b5/2000.jpeg" style="width:100%">
+<div class="bottomleft">Case against officer who killed neighbor to go to grand jury</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:480343b8b2f541d38ecf641b321bbd56/3000.jpeg" style="width:100%">
+<div class="bottomleft">Florence strengthens to Category 4, takes aim at Carolinas</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:92d549a17ca7416a83956abf7e872588/3000.jpeg" style="width:100%">
+<div class="bottomleft">California aims to drop fossil fuels for electricity by 2045</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:1bcca1f751154a40aeb8e7e65fab4c8f/3000.jpeg" style="width:100%">
+<div class="bottomleft">Sweden joins Europe's move to right over migration backlash</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:e9aa5f7d6fc8477caae9dfc5b9aedb0c/3000.jpeg" style="width:100%">
+<div class="bottomleft">Trump administration orders closure of Palestinian office</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:337b7f8ee3aa4d38ba8d250604968873/3000.jpeg" style="width:100%">
+<div class="bottomleft">Unlikely weapon: petanque balls help disarm Paris attacker</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:102fb77e40d440eba2a62f6d840834f2/3000.jpeg" style="width:100%">
+<div class="bottomleft">Iraqi city of Basra seethes over water crisis, unemployment</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:699e3ae3f52d46fe9990452d86cb1dc1/3000.jpeg" style="width:100%">
+<div class="bottomleft">Woodward: Kelly, Mattis denials of his book quotes untrue</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:de6e37ab4f454fe5984a696859a1af32/3000.jpeg" style="width:100%">
+<div class="bottomleft">With the fall of a kingmaker, CBS is punished on Wall Street</div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:3ba960386eda45e6b2fbb3151ea57e66/3000.jpeg" style="width:100%">
+<div class="bottomleft">Emmy predictions: 'Game of Thrones' or 'Handmaid's Tale'?</div>
+  </div>
+
+<div class="column">
+<h2 class="h2">NYT</h2>
+
+<img src="https://static01.nyt.com/images/2018/09/11/us/politics/11dc-china1/11dc-china1-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">U.S. Weighs Sanctions Against Chinese Officials Over Muslim Detention Camps</div>
+<img src="https://static01.nyt.com/images/2018/09/10/us/hurricane-florence-tracking-map-promo-1536588256453/hurricane-florence-tracking-map-promo-1536588256453-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Hurricane Florence Tracker: Storm’s Path Towards East Coast</div>
+<img src="https://static01.nyt.com/images/2018/09/11/us/11florence/merlin_143548476_74de99bc-a589-4a9b-93d4-86db9c4b9fdc-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Hurricane Florence Threatens Carolinas; 1 Million Ordered to Evacuate</div>
+<img src="https://static01.nyt.com/images/2018/09/11/business/11ENDOFMOONVES/11ENDOFMOONVES-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">The Steady Rise and Sudden Fall of Leslie Moonves</div>
+<img src="https://static01.nyt.com/images/2018/09/11/us/11DESANTIS-01/11DESANTIS-01-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Ron DeSantis Resigns From Congress as He Runs for Florida Governor</div>
+<img src="https://static01.nyt.com/images/2018/09/07/us/politics/00ads-6/00ads-6-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Viral Videos Are Replacing Pricey Political Ads. They’re Cheaper, and They Work.</div>
+<img src="https://static01.nyt.com/images/2018/09/11/us/politics/11dc-fastfact/11dc-fastfact-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Trump Falsely Claims G.D.P. Growth Is Higher Than Unemployment ‘for the First Time in 100 Years’</div>
+<img src="https://static01.nyt.com/images/2018/09/11/us/politics/11dc-bolton/11dc-bolton-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">Trump Administration Threatens International Criminal Court and the P.L.O.</div>
+<img src="https://static01.nyt.com/images/2018/09/07/us/politics/11blackburn-1/11blackburn-1-facebookJumbo-v2.jpg" style="width:100%">
+<div class="bottomleft">Abortion Opposition Once Defined Marsha Blackburn. But Not in Her Senate Race.</div>
+<img src="https://static01.nyt.com/images/2018/09/06/world/europe/Skripal1/Skripal1-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft">A Spy Story: Sergei Skripal Was a Little Fish. He Had a Big Enemy.</div>
+</div>
+
+<div class="column">
+<h2 class="h2">WaPo</h2>
+
+<img src="https://www.washingtonpost.com/graphics/2018/lifestyle/magazine/ben-folds-artists-alternative-storytelling-issue/img/cover-desktop-copy.jpg" style="width:100%">
+<div class="bottomleft">Ben Folds and other artists build an issue of The Washington Post Magazine.</div>
+<img src="https://www.washingtonpost.com/resizer/ti87Zx_FGfE3FkwqatWrK6A8ztk=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/2CHCF6VU7AI6RLSPFQKDTSLNPE.jpg" style="width:100%">
+<div class="bottomleft">Palestinians slam U.S. ‘vicious blackmail’ as their Washington office is shuttered</div>
+<img src="https://www.washingtonpost.com/resizer/Su9oASJgxnWRnKvzlai6_20pXxo=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XVXOT3FUSUI6RFHLHPKS37URPM.jpg" style="width:100%">
+<div class="bottomleft">U.S. to close Palestinian office in Washington, citing lack of progress on peace process with Israel</div>
+<img src="https://www.washingtonpost.com/resizer/6wn_R8SuInE6XxJRTskmTnR_fOA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/B74JHPVVAYI6RLSPFQKDTSLNPE.jpg" style="width:100%">
+<div class="bottomleft">‘We’re in the bull’s-eye’: Evacuation orders multiply as Hurricane Florence churns toward East Coast</div>
+<img src="https://www.washingtonpost.com/resizer/SkJFTi0odueF0lWWxrPbbQ8lJ5k=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SX7YD6EPLUI6RAZCWVECX5PA6U.jpg" style="width:100%">
+<div class="bottomleft">Judge orders accused Russian agent Maria Butina to remain in jail, lashes out at both sides for mistakes</div>
+<img src="https://www.washingtonpost.com/graphics/2018/lifestyle/magazine/ben-folds-artists-alternative-storytelling-issue/img/social/Social_BENFOLDS_0916.jpg" style="width:100%">
+<div class="bottomleft">We asked Ben Folds to write a song about anything. He chose the U.S. deputy attorney general.</div>
+<img src="https://www.washingtonpost.com/resizer/FT8--3vNGaUKwEr-ueRZ7IHr3eM=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WG7TOAFVFMI6RFHLHPKS37URPM.jpg" style="width:100%">
+<div class="bottomleft">Kim Jong Un sends letter to Trump seeking second summit, White House says</div>
+<img src="https://www.washingtonpost.com/resizer/mdqCAxC7gIlYK4SZttBafqCYM98=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/PBSLPFY5HYZP5IHND5PFGDIQHM.jpg" style="width:100%">
+<div class="bottomleft">Opinion | The Trump-Russia coverup that Democrats fear</div>
+<img src="https://www.washingtonpost.com/resizer/9z_F4qqh2BRK2eyyiU0pT9VJaOc=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XNUMYTKFFQ6D7GD3JE3PMFGZNM.jpg" style="width:100%">
+<div class="bottomleft">Florence strengthens to hurricane and poses extreme threat to Southeast and Mid-Atlantic</div>
+<img src="https://www.washingtonpost.com/graphics/2018/national/tracking-hurricane-florence/img/florence-promo.jpg" style="width:100%">
+<div class="bottomleft">Tracking Hurricane Florence</div>
+</div>
+
+<div class="column">
+<h2 class="h2">Science</h2>
+
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/10175926/gettyimages-886907934.jpg" style="width:100%">
+<div class="bottomleft">Genetic studies intend to help people with autism, not wipe them out</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/09154238/gettyimages-496512230.jpg" style="width:100%">
+<div class="bottomleft">France going veggie would save 1m litres of water per person each year</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/10144952/p3320429-healthy_brain_mri_scan.jpg" style="width:100%">
+<div class="bottomleft">We’ve cracked the brain’s emotion code and it may help depression</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/10163011/gettyimages-909101204.jpg" style="width:100%">
+<div class="bottomleft">Antimatter seen in two places at once thanks to quantum experiment</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/07151911/lead_180600_toc_system001_towtest-16.jpg" style="width:100%">
+<div class="bottomleft">A giant pool noodle to clean up ocean plastic launches today</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/07152833/armyhq-2016-181-100.jpg" style="width:100%">
+<div class="bottomleft">New Scientist Live: what it’s like to be an explorer in the modern age</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/07132254/gettyimages-157531137.jpg" style="width:100%">
+<div class="bottomleft">Google’s AI hate speech detector is easily fooled by a few typos</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/07155449/img_01-1.jpg" style="width:100%">
+<div class="bottomleft">Japan wants people to virtually embody avatars orbiting in space</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/07153404/gettyimages-929563048.jpg" style="width:100%">
+<div class="bottomleft">Novichok attack: Did Russian agents have enough poison to kill 4000?</div>
+<img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2018/09/05163218/gettyimages-6302380281.jpg" style="width:100%">
+<div class="bottomleft">We’re not unique – lots of species can recognise themselves</div>
+</div>
+
+</body>
+</html>
