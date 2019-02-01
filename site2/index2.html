@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia;
+    background-color:orange;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    color:green;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.bottomleft {
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+    color: green;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color:rgba(255,255,255,0.9);
+    font-size: 16px;
+}
+.h2 {
+    text-align:center;
+    color:red;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.footer {
+	text-align:center;
+	font-size:10px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<title>API</title>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>A picture is worth a thousand words</h1>
+  <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+</div>
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+<div class="column">
+<h2 class="h2">AP</h2>
+
+<img src="https://storage.googleapis.com/afs-prod/media/media:7d0f576f7515467eb0691489a2028bf7/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/d95cec6205d44988a4146721f80755d7">The Latest: Evacuees clogging highways ahead of Florence</a></div>
+<img src="" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/96061fe9fea44e5389a431458b46955f">US marks 9/11 with somber tributes, new monument to victims</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:02860955941741d0a9350165e52b9d42/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/96061fe9fea44e5389a431458b46955f">US marks 9/11 with somber tributes, new monument to victims</a></div>
+<img src="" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/0e6722d9fddb4f349a268f38ea00298c">Trump to mark 17 years since Sept. 11 at Pennsylvania field</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:5a30ac7c284c4582a492f9a22efdd4c5/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/0e6722d9fddb4f349a268f38ea00298c">Trump to mark 17 years since Sept. 11 at Pennsylvania field</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:d89998440d3743918b91c1ce3c82e226/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/680049ed13fa4b14a5539ed6afb95df8">Republicans lack votes _ and appetite _ to end 'Obamacare'</a></div>
+<img src="" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/b80e3de011484b32bb47f04ebcb12a5a">Florence could hit with punch not seen in more than 60 years</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:b64046ffe46546e58ce4a10b2021697e/2994.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/b80e3de011484b32bb47f04ebcb12a5a">Florence could hit with punch not seen in more than 60 years</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:7f70bfc624ce432490870dee2017b96a/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/0c6a4a7510b64498a2238fe304aec746">AP Poll: Voters open to candidates who aren't very religious</a></div>
+<img src="https://storage.googleapis.com/afs-prod/media/media:9ac2b79ed0504ba893c767f2bf0ad74e/3000.jpeg" style="width:100%">
+<div class="bottomleft"><a href="https://apnews.com/719fd55239c24d82807a2743e9776c10">AP Interview: Iran nuclear chief says atomic program strong</a></div>
+
+</div>
+
+<div class="column">
+<h2 class="h2">NYT</h2>
+
+<img src="https://static01.nyt.com/images/2018/09/08/us/politics/08pollexplainer-1/08pollexplainer-1-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/11/us/politics/primary-election-polling.html">Primary Season Was Full of Surprises. Here’s Why the Polls Missed Some of Them.</a></div>
+<img src="https://static01.nyt.com/images/2018/09/10/business/10jp-crisis1-print/merlin_138272292_d9bb8a21-d099-49a2-9397-5fcf3a8df11d-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/09/technology/internet-industry-hearings.html">For Big Tech, a Comeuppance We’ve Seen Before: On Wall St.</a></div>
+<img src="https://static01.nyt.com/images/2018/09/11/business/11db-sorkin-3/11db-sorkin-3-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/10/business/dealbook/financial-crisis-trump.html">From Trump to Trade, the Financial Crisis Still Resonates 10 Years Later</a></div>
+<img src="https://static01.nyt.com/images/2018/09/07/business/00GOLDMAN/00GOLDMAN-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/11/business/goldman-sachs-whistleblower.html">A Top Goldman Banker Raised Ethics Concerns. Then He Was Gone.</a></div>
+<img src="https://static01.nyt.com/images/2018/09/09/world/xxisis-assault1/xxisis-assault1-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/11/world/middleeast/isis-syria.html">Last ISIS Redoubt Under Attack in Syria</a></div>
+<img src="https://static01.nyt.com/images/2018/09/12/world/12florence-live-1sub/12florence-live-1sub-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/11/us/hurricane-florence-updates.html">Hurricane Florence Updates: Storm Is Expected to Gain Strength Tuesday</a></div>
+<img src="https://static01.nyt.com/images/2018/09/12/us/politics/12whattowatchNH-nh1/12whattowatchNH-nh1-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/11/us/new-hampshire-primary-election.html">The New Hampshire Primary Election Is on Tuesday. Here’s What to Watch.</a></div>
+<img src="https://static01.nyt.com/images/2018/09/11/nyregion/11govrace/11govrace-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/10/nyregion/cuomo-bridge-contractor-tappan-zee.html">Ahead of the Primary, Cuomo Administration Offered Sweeteners to Get New Bridge Open</a></div>
+<img src="https://static01.nyt.com/images/2018/09/10/us/hurricane-florence-tracking-map-promo-1536588256453/hurricane-florence-tracking-map-promo-1536588256453-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/interactive/2018/09/10/us/hurricane-florence-tracking-map.html">Hurricane Florence Tracker: Storm’s Path Towards East Coast</a></div>
+<img src="https://static01.nyt.com/images/2018/09/11/us/11florence/merlin_143548476_74de99bc-a589-4a9b-93d4-86db9c4b9fdc-facebookJumbo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.nytimes.com/2018/09/10/us/hurricane-florence.html">Hurricane Florence Threatens Carolinas; 1 Million Ordered to Evacuate</a></div>
+
+</div>
+
+<div class="column">
+<h2 class="h2">WaPo</h2>
+
+<img src="https://www.washingtonpost.com/resizer/q4ob6vQdWvm7o68zV3CFaDUjXgE=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/I5U2XIG2DQY35JEUEYGH3HEJF4.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/blogs/plum-line/wp/2018/09/11/another-big-woodward-reveal-trumps-bottomless-bad-faith-and-nonstop-lying/">Opinion | Another big Woodward reveal: Trump’s bottomless bad faith and nonstop lying</a></div>
+<img src="https://www.washingtonpost.com/pbox.php?url=https://palomaimages.washingtonpost.com/pr2/11191268a2403832e27e678a17e87ded-4000-2699-70-8-AFP_18R3EM.jpg&w=1484&op=resize&opt=1&filter=antialias&t=20170517" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2018/09/11/daily-202-playing-catch-up-progressive-groups-to-spend-10-million-on-digital-ads-for-state-legislative-races/5b970b121b326b47ec959539/">Analysis | The Daily 202: Playing ‘catch-up,’ progressive groups to spend $10 million on digital ads for state legislative races</a></div>
+<img src="https://www.washingtonpost.com/resizer/b5YO4DQePE_o0tyg6XLlSJhL7uY=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/JVS5GPQHJ46GXJDWF4QYOAU62A.png" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/news/capital-weather-gang/wp/2018/09/11/hurricane-florence-watches-posted-as-extremely-dangerous-florence-churns-toward-carolinas/">Hurricane Florence: Watches posted as ‘extremely dangerous’ Florence churns toward Carolinas</a></div>
+<img src="https://www.washingtonpost.com/resizer/0UkfmlsaRf92HC5j6XVYEPgzLxo=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LH4KVCE6PYI6RA6SOAQDXDL3IQ.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/politics/donald-trump-jr-says-his-father-cant-trust-everyone-around-him-after-the-anonymous-op-ed/2018/09/11/e2f6e5ae-b5b5-11e8-a2c5-3187f427e253_story.html">Donald Trump Jr. says his father can’t trust everyone around him after the anonymous op-ed</a></div>
+<img src="https://www.washingtonpost.com/resizer/dZZ-AspKc4WcntGC7VO-9rNA_2A=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/AJ2YV6VSDMI6RC2TKAIWO2HETE.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/politics/voter-backlash-to-trump-bathroom-law-have-put-conservative-nc-legislature-in-play/2018/09/10/346e3190-b1f5-11e8-a20b-5f4f84429666_story.html">Voter backlash to Trump, bathroom law has put conservative N.C. legislature in play.</a></div>
+<img src="https://www.washingtonpost.com/resizer/3nyuUeQy-yaqTeD8l3Kkg1frrDo=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/2USF3TFG6UI6RLLPBADXBXG5YI.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/world/a-tunisian-gravedigger-gives-migrants-what-they-were-deprived-of-in-life-dignity/2018/09/10/8b77e72a-a6f5-11e8-ad6f-080770dcddc2_story.html">A Tunisian gravedigger gives migrants what they were deprived of in life: Dignity</a></div>
+<img src="https://www.washingtonpost.com/resizer/e9VQol6_ua8FvWrk3LVl4FJ7RUM=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/YFTI7IVVIII6RJ5VVWVKLMVFP4.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/opinions/trump-is-harming-the-dream-of-america-more-than-any-foreign-adversary-ever-could/2018/09/10/662e21a4-b52e-11e8-a2c5-3187f427e253_story.html">Opinion | Trump is harming the dream of America more than any foreign adversary ever could</a></div>
+<img src="https://www.washingtonpost.com/resizer/wmGFdojaGV-0xH8NOmRWXbDh8KI=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/MBQIFJVRAII6RC2TKAIWO2HETE.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/world/asia_pacific/a-would-be-city-in-the-malaysian-jungle-is-caught-in-a-growing-rift-between-china-and-its-neighbors/2018/09/10/d705cb18-b031-11e8-9a6a-565d92a3585d_story.html">A would-be city in the Malaysian jungle is caught in a growing rift between China and its neighbors</a></div>
+<img src="https://www.washingtonpost.com/resizer/GRvStFA0KqV22AjTNqaoi7Na3QQ=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/ULSZV6FSCAI6RC2TKAIWO2HETE.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/politics/in-hollywood-theres-a-nerdy-new-hobby-flipping-the-house/2018/09/10/4de7d7ae-aadc-11e8-a8d7-0f63ab8b1370_story.html">In Hollywood, there’s a nerdy new hobby: Flipping the House</a></div>
+<img src="https://www.washingtonpost.com/graphics/2018/national/tracking-hurricane-florence/img/florence-promo.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/graphics/2018/national/tracking-hurricane-florence/?utm_term=.04579d3016f6">Tracking Hurricane Florence</a></div>
+
+</div>
+
+<div class="column">
+<h2 class="h2">Others</h2>
+
+<img src="https://www.washingtonpost.com/resizer/AzjpmV_7Q3o8Um6_kR9PUg49syw=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SF3V7JFVYYI6RJ5VVWVKLMVFP4.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.washingtonpost.com/world/national-security/on-sept-11-anniversary-trump-launches-fresh-attacks-on-fbi-and-justice-department-with-dubious-allegation/2018/09/11/ff8f9040-b5c3-11e8-a7b5-adaaa5b2a57f_story.html">On Sept. 11 anniversary, Trump launches fresh attacks on FBI and Justice Department with dubious allegation</a></div>
+<img src="https://hips.htvapps.com/vidthumb/05e2cbeb-61d2-45a5-833f-af534b56709e/05e2cbeb-61d2-45a5-833f-af534b56709e_image.jpg?crop=1xw:1.0xh;center,top&resize=1200:*" style="width:100%">
+<div class="bottomleft"><a href="https://www.wcvb.com/article/video-rain-storms-move-in-during-afternoon/23079850">Video: Rain, storms move in during afternoon</a></div>
+<img src="https://s3.reutersmedia.net/resources/r/?m=02&d=20180911&t=2&i=1303192777&w=1200&r=LYNXNPEE8A0SP" style="width:100%">
+<div class="bottomleft"><a href="https://www.reuters.com/article/us-cuba-usa-diplomats/russia-the-main-suspect-in-u-s-diplomats-illness-in-cuba-nbc-idUSKCN1LR1GE">Russia the main suspect in U.S. diplomats' illness in Cuba: NBC</a></div>
+<img src="https://www.gannett-cdn.com/presto/2018/09/04/USAT/35e13cb0-2912-45e8-ab31-5bbcb5a00abc-AP_Fall_Books.jpg?crop=5707,3210,x1,y5049&width=3200&height=1680&fit=bounds" style="width:100%">
+<div class="bottomleft"><a href="https://www.usatoday.com/story/news/politics/2018/09/11/bob-woodward-book-mike-pence-tries-stay-out-donald-trump-way/1260523002/?utm_source=google&utm_medium=amp&utm_campaign=speakable">Bob Woodward's take on Vice President Mike Pence: He tries to stay out of Trump's way</a></div>
+<img src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/us/2018/09/11/bolton-international-criminal-court-is-already-dead-to-us/_jcr_content/par/featured-media/media-0.img.png/0/0/1536643049486.png?ve=1" style="width:100%">
+<div class="bottomleft"><a href="http://www.foxnews.com/us/2018/09/11/bolton-international-criminal-court-is-already-dead-to-us.html">Bolton: International Criminal Court 'already dead to us'</a></div>
+<img src="https://cdn.cnn.com/cnnnext/dam/assets/180911155819-satellite-florence-sept-10-super-tease.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.cnn.com/2018/09/11/us/hurricane-florence-south-east-coast-wxc/index.html">Florence forces more than 1 million people to flee</a></div>
+<img src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/us/2018/09/11/attorneys-for-family-criticize-affidavit-in-dallas-shooting/_jcr_content/par/featured-media/media-0.img.png/0/0/1536647849554.png?ve=1" style="width:100%">
+<div class="bottomleft"><a href="http://www.foxnews.com/us/2018/09/11/attorneys-for-family-criticize-affidavit-in-dallas-shooting.html">Attorneys for family criticize affidavit in Dallas shooting</a></div>
+<img src="https://cdn.cnn.com/cnnnext/dam/assets/180821195500-02-trump-wv-rally-0821-super-tease.jpg" style="width:100%">
+<div class="bottomleft"><a href="https://www.cnn.com/2018/09/11/politics/donald-trump-economy-midterms-republicans/index.html">Trump's economy is roaring -- but the controversies around him are drowning it out</a></div>
+<img src="http://www.latimes.com/resizer/aWfJxihzv2AszSq6XdNE9oYYVko=/1200x0/www.trbimg.com/img-5b976d27/turbine/la-me-lapd-cop-shot-videos-20180910" style="width:100%">
+<div class="bottomleft"><a href="http://www.latimes.com/local/lanow/la-me-lapd-cop-shot-videos-20180910-story.html">LAPD video shows female officer being shot at point-blank range during traffic stop before partner kills suspect</a></div>
+</div>
+</div>
+
+
+<div class="footer">
+<p>(c)
+<script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+</script>
+All rights reserved.</p>
+<p>
+<script language="javascript" type="text/javascript">
+document.write(Date())
+</script></p>
+</div>
+
+
+
+</body>
+</html>

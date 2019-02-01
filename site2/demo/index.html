@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta property="og:image"
+content="http://users.cs.duke.edu/~hbui/temp/demo/logo.jpeg"/>
+<meta content="Media Streaming Open-Source Stream Radio Youtube" name="description" />
+<meta property="og:title"  content="Media, Online, Stream, Radio, Station" />
+<meta property="og:type" content="Media, Online, Stream, Radio, Station" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Live Stream</title>	
+
+<script src="../jwplayer/jwplayer.js"></script>
+<script>jwplayer.key="ol3LI+0LqURp/4PMnd8qwAjtK3CqO/cRPP0HLw==";</script>
+
+<script type="text/javascript" src="../jwplayer/jwplayer.js"></script>
+<script type="text/javascript" src="../jwplayer/jwplayer.flash.swf"></script>
+<script type="text/javascript" src="../jwplayer/jwplayer.swf"></script>
+</head>
+
+<style>
+body { color: black;}
+#mediawrapper { 
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:30px;
+    width:800px;
+}
+h1{ text-align: right; color:white;}
+h3{ text-align: left; color:white;}
+a{ text-align: left; color:white;}
+ul{ text-align: left; color:white; width: 1000px; margin-bottom:20px; overflow:hidden;}
+li{ text-align: left; color:white; line-height:1.5em; float:left; display:inline; width:20%;}
+</style>
+
+
+<body bgcolor="black">
+<!--
+<h1 style="color:white;">myTV Player</h1>
+-->
+<h1>LiveStream<img width="35px" src="logo.jpeg"/></h1>
+
+<center>
+
+<script src="https://content.jwplatform.com/libraries/DbXZPMBQ.js"></script>
+<!-- need to have this to work with Firefox and Chrome -->
+
+<div id='container'></div>
+ 
+ <form>
+   <select>
+
+<option value="">Select Stream...</option>
+
+<option value="http://dukestream.oit.duke.edu:1935/live/axis-duml1.stream/chunklist_w1377058993.m3u8">Duke Marine</option>
+
+<option value="http://static.wamu.org/streams/live/1/live.m3u">WAMU</option>
+
+<option
+value="https://www.youtube.com/watch?v=9uKVI6_Fm4g">Claude
+Debussy</option>
+
+<option value="https://www.youtube.com/watch?v=zAaJzTWX_Io">Ave
+Maria</option>
+
+<option
+value="http://play.publicradio.org/edit/d/podcast/marketplace/morning_report/2018/07/02/mmr_20180702_pod2_64.mp3">Morning
+Marketplace </option>
+
+<option
+value="http://play.publicradio.org/edit/d/podcast/marketplace/morning_report/2018/07/02/mmr_20180702_pod3_64.mp3">Morning
+Marketplace 2</option>
+
+
+<option
+value="http://play.publicradio.org/edit/d/podcast/marketplace/pm/2018/06/29/pm_20180629_pod_64.mp3">Marketplace
+PM </option>
+
+<option value="https://www.youtube.com/watch?v=k_on7zgBPUA">Richard Claydeman Music</option>
+<option
+value="http://raycomhds-lh.akamaihd.net/i/hdslive_01@136338/master.m3u8">ACC</option>
+
+<option value="https://cspan1-lh.akamaihd.net/i/cspan1_1@304727/index_1000_av-p.m3u8">C-SPAN</option>
+
+<option value="http://cspan2-lh.akamaihd.net/i/cspan2_1@304728/index_1000_av-p.m3u8?sd=10&amp;rebase=on">C-SPAN2</option>
+
+<option value="http://cspan3-lh.akamaihd.net/i/cspan3_1@304729/index_1000_av-p.m3u8?sd=10&amp;rebase=on">C-SPAN3</option>
+
+<option value="http://nasatv-lh.akamaihd.net/i/NASA_101@319270/master.m3u8">NASA TV</option>
+
+<option value="http://nasatv-lh.akamaihd.net/i/NASA_103@319271/master.m3u8">NASA Media</option>
+
+<option value="http://byuhd2-lh.akamaihd.net/i/byutvhd2_live@103136/master.m3u8">BYU TV</option>
+
+<option value="http://abclive.abcnews.com/i/abc_live4@136330/index_4000_av-p.m3u8">ABC News</option>
+
+<option value="http://ktvb-lh.akamaihd.net/i/KTVB_Shows_1@60359/index_2000_av-p.m3u8">KTVB (Boise)</option>
+
+<option value="http://play-prod1.live.anvato.net/server/play/cbslocal-kcal-dfp/master.m3u8">KCAL (Los Angeles)</option>
+
+<option value="http://ktvulive-i.akamaihd.net/hls/live/224677/ktvu1/master.m3u8">KTVU (San Francisco)</option>
+
+<option value="http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/index_700_av-p.m3u8">WGN (Chicago)</option>
+
+<option value="http://spswmar-i.akamaihd.net/hls/live/203491/anvato/master.m3u8">WMAR (Baltimore)</option>
+
+<option value="http://wnbclive-f.akamaihd.net/i/wnbca1_1@13992/master.m3u8">WNBC (New York)</option>
+
+<option value="http://player-api.new.livestream.com/accounts/9262780/events/3189705/broadcasts/146024599.secure.m3u8">KTLA (Los Angeles)</option>
+
+<option value="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/master.m3u8">CBN (Virgina Beach)</option>
+
+<option value="http://cmghlslive-i.akamaihd.net/hls/live/224710/WFOX02/master.m3u8">WJAX (Jacksonville)</option>
+
+<option value="http://cdn3.videos.bloomberg.com/btv/us/master.m3u8">Bloomberg</option>
+
+<option value="http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8">NBC Golf</option>
+
+<option value="http://as-hds-ww-live.bbcfmt.vo.llnwd.net/pool_27/live/bbc_world_service/bbc_world_service.isml/bbc_world_service-audio=96000.m3u8">BBC News Radio</option>
+
+<option value="http://fnurtmp-f.akamaihd.net/i/FNRADIOHDS_1@92141/index_1000_av-p.m3u8">Fox Radio</option>
+
+<option value="http://mediaserver.wuncfm.unc.edu:8000/wunc64">WUNC Radio</option>
+
+<option value="http://storyweb.wuncfm.unc.edu/dfd/wuncnewscast.mp3">NC Headlines (radio)</option>
+
+<option value="http://pd.npr.org/anon.npr-mp3/npr/news/newscast.mp3">NPR Headlines (radio)</option>
+
+<option value="http://www.voanews.com/mp3/voa/english/nnow/NNOW_HEADLINES.mp3">VOA Headlines (radio)</option>
+
+<option value="http://theclassicalstation.org/audio/wcpe.pls">Classical Radio</option>
+
+<option value="http://18183.live.streamtheworld.com/WRALHD2AAC.aac">Christian Radio</option>
+
+<option value="http://btvasia-i.akamaihd.net/hls/live/203322/btvasia_ios/P1/M24K.m3u8">Bloomberg Asia</option>
+
+<option value="http://telvuehls_t02027-i.akamaihd.net/hls/live/213119/T02027-amgtv2/playlist_2.m3u8">AMG</option>
+
+<option value="http://pcdn-07.sdn.si/22ba7f2471e9f5e894f3c50f4f16ea68/planettv/planettv.isml/planettv.m3u8">Planet TV</option>
+
+<option value="http://ooyalahd2-f.akamaihd.net/i/intv02_delivery@346464/master.m3u8">Insight</option>
+
+<option value="http://imtcnai-lh.akamaihd.net/i/cnai_main@334572/master.m3u8">NewsAsia</option>
+
+<option value="http://bcoveliveios-i.akamaihd.net/hls/live/246496/4744899807001/livestream/master.m3u8">WHDH (Boston)</option>
+
+<option value="https://nhkwtvglobal-i.akamaihd.net/hls/live/263941/nhkwtvglobal/index_1180.m3u8">NHK</option>
+
+<option value="http://ooyalahd2-f.akamaihd.net/i/globalradio01_delivery@156521/master.m3u8">Capital TV</option>
+
+<option value="http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/master.m3u8">Heart TV</option>
+
+<option value="http://ooyalahd2-f.akamaihd.net/i/newsmax02_delivery@119568/index_2528_av-p.m3u8">NewsMax</option>
+
+<option value="http://cbsnews-linear.mdialog.com/video_assets/cbsnews.m3u8?api_key=563b80c1ae4ce359830f572d2496a947&iu=/8264/vaw-can/mobile_web/cbsnews_mobile">CBS News</option>
+
+<option value="http://mediacdn-hls.wral.com/livehttporigin/_definst_/smil:encoder17-multi.smil/playlist.m3u8">NC Weather</option>
+
+<option value="http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/master.m3u8">M2O</option>
+
+<option value="http://moiptvus-lh.akamaihd.net/i/3abnlive_1@328342/master.m3u8">3ABN</option>
+
+<option value="http://moiptvus-lh.akamaihd.net/i/kidslive_1@328343/master.m3u8">3ABN Kids</option>
+
+<option value="http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master.m3u8">London Live</option>
+
+<option value="http://cmctv.ios.internapcdn.net/cmctv_vitalstream_com/live_1/CMC-Mobile/CMC-Mobile.m3u8">CMC</option>
+
+<option value="https://vcnindimusictv.teleosmedia.com/stream/indimusictv/seglist_720p.m3u8">IndiMusic TV</option>
+
+<option value="http://cdn.rbm.tv/rightbrainmedia-live-109/_definst_/smil:radioutv_all.smil/chunklist_w861454476_b1300000.m3u8">RadioU TV</option>
+
+<option value="http://acaooyalahd2-lh.akamaihd.net/i/TBN03_delivery@186241/master.m3u8">Juce TV</option>
+
+<option value="http://granicus.mpl.miisolutions.net:1935/granicus-livepull-us-3/cms-k12-nc/mp4:G0725_002/playlist.m3u8">CMS TV</option>
+
+<option value="http://192.155.252.226/WRTP/wrtp.mp4/playlist.m3u8">FM 99.1</option>
+
+<option value="http://17413.live.streamtheworld.com/WRALFMAAC.aac">FM 101.5</option>
+
+<option value="http://16803.live.streamtheworld.com/WQDRFMAAC.aac">Country Radio</option>
+
+<option value="http://stream.abacast.net/playlist/entercom-wqmgfmaac-64.m3u">R&B Radio</option>
+
+<option value="http://mediacdn-hls.wral.com/livehttporigin/_definst_/smil:encoder25-multi.smil/playlist.m3u8">WRAL-TV</option>
+
+<option value="http://cmghlslive-i.akamaihd.net/hls/live/224717/WSOC/master.m3u8">WSOC (Charlotte)</option>
+
+<option value="https://www.youtube.com/watch?v=y60wDzZt8yg">Sky News</option>
+
+<option value="https://www.youtube.com/watch?v=pJC-vohDHl8">Al Jazeera News</option>
+
+<option value="http://player-api.new.livestream.com/accounts/10950088/events/3587954/broadcasts/145577914.secure.m3u8">WBTV (Charlotte)</option>
+
+<option value="http://catholictvhd-lh.akamaihd.net/i/ctvhd_1@88148/master.m3u8">Catholic TV</option>
+
+<option value="http://acaooyalahd2-lh.akamaihd.net/i/TBN04_delivery@186242/master.m3u8">iTBN HD</option>
+
+<option value="http://bcliveuniv-lh.akamaihd.net/i/HopeChannel_1@182961/master.m3u8">Hope Channel</option>
+
+<option value="http://telvuehls_t01587-i.akamaihd.net/hls/live/215638/T01587-slstv/playlist.m3u8">SmartLifeStye</option>
+
+<option value="http://vftv.saigon.ns01.us:1935/vf572caliisai/myStream/chunklist_w546913329.m3u8">VF TV</option>
+
+<option value="http://settv.saigon.ns01.us:1935/vietset574tvv/myStream/chunklist_w217221440.m3u8">Saigon TV</option>
+
+<option value="http://63.143.59.125:1935/live/myStream/playlist.m3u8">Saigon TV 2</option>
+
+<option value="http://saigontvtv.saigon.ns01.us:1935/VietStarTV/myStream/chunklist_w36065371.m3u8">Viet Star TV</option>
+
+<option value="http://vbstv.saigon.ns01.us:1935/vbstv/myStream/chunklist_w316001017.m3u8">VBS TV</option>
+
+<option value="http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8">Little Saigon</option>
+
+<option value="rtmp://live.chosun.gscdn.com/live//tvchosun1.stream">Chosun</option>
+
+<option value="http://origin3-edge2.ord.yourstreamlive.com:1935/live/yourstreamlive/amlst:out_1651_211xdnzd/playlist.m3u8">Saigon TV 3</option>
+
+<option value="http://cmghlslive-i.akamaihd.net/hls/live/224708/KIRO/master.m3u8">KIRO (Seattle)</option>
+
+<option value="http://64.71.129.2:8080/hls/ius_000114.m3u8">SChannel</option>
+
+<option value="http://64.71.129.2:8080/hls/ius_000131.m3u8">VietBay</option>
+
+<option value="http://liveplay3.malimarcdn.com/ibcnews/ibcnews.sdp/playlist.m3u8">IBC TV</option>
+<option value="https://www.youtube.com/watch?v=7L2qMYkiPWg">Sen Vang
+</option>
+<option value="http://livestream.vnvn.net/vnatv573.m3u8">VNA TV</option>
+
+<option
+value="https://www.youtube.com/watch?v=9nMuTuy5SIs">KBS</option>
+
+<option value="https://www.youtube.com/watch?v=1Ydto3Iyzic">France 24 News</option>
+
+<option
+value="http://96.234.25.74:5127/live/nbc_news/playlist.m3u8">NBC</option>
+
+<option value="rtmp://123.108.164.112/etv1sb/phd36">Arirang</option>
+
+<option value="rtmp://edge1.everyon.tv:1935/etv1sb/phd1166">K-POP</option>
+
+<option value="rtmp://118.97.183.196/jhos//kbs">KBS World</option>
+
+<option value="rtmp://123.108.164.71/etv2sb/phd27">CBS TV</option>
+
+<option
+value="http://125.88.92.166:30001/PLTV/88888956/224/3221227704/1.m3u8">CCTV</option>
+
+<option value="http://208.92.36.158/ipad/live/nba_ipad_1240.m3u8">Versus</option>
+
+<option value="http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8">Real Madrid</option>
+
+<option value="http://ooyalahd2-f.akamaihd.net/i/crtv01_delivery@329705/index_1164_av-b.m3u8">Poker Channel</option>
+
+<option value="http://esioslive6-i.akamaihd.net/hls/live/202874/AL_P_ESP1_INTER_ENG/playlist_1000.m3u8">Eurosport</option>
+
+<option value="http://cmghlslive-i.akamaihd.net:80/hls/live/224714/WJAX/904k/prog.m3u8">CBS 47</option>
+
+<option value="http://dwstream3-lh.akamaihd.net:80/i/dwstream3_live@124409/index_1_av-p.m3u8"> DW </option>
+
+<option
+value="http://16973.live.streamtheworld.com/WCMCFMAAC.aac">ESPN radio</option>
+
+<option value="http://17693.live.streamtheworld.com/WDNCAMAAC.aac">The Buzz</option>
+
+<option value="https://www.youtube.com/watch?v=n5mseJU4w4Q">CGTN </option>
+<option value="https://www.youtube.com/watch?v=YKviBwZCJCA"> Tom and Jerry
+</option>
+ 
+  </select>
+
+   <input type="text" />
+   <button class="btn med red" type="submit">Click-to-Play!</button>
+ </form>
+
+</center>
+
+
+<script type="text/javascript">
+jwplayer('container').setup ({
+	image:'http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5113/5113000_sd.jpg',
+     	flashplayer: '../jwplayer/jwplayer.flash.swf',
+	file:'http://cmghlslive-i.akamaihd.net/hls/live/224717/WSOC/master.m3u8'
+ });
+ 
+ function loadMPD(a) {
+     var o = {
+       image:'http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5113/5113000_sd.jpg',
+       flashplayer: '../jwplayer/jwplayer.swf',
+       type: 'hls',
+       autostart: a,
+       width: 720,
+       height: 480,
+               hlslabels: {
+             "415": "128p",
+             "515": "160p",
+             "650": "208p",
+             "881":"252p",
+             "1200":"332p",
+             "1600": "432p",
+             "2300": "560p",
+             "3200":"720p"
+         }
+     };
+     var f = document.querySelector("input").value;
+     if(f) o.file = f;
+     jwplayer('container').setup(o);
+   }
+ 
+   document.querySelector("select").addEventListener("change",function(e){
+     if(this.value) {
+       document.querySelector("input").value = this.value;
+       loadMPD(true);
+       this.value = "";
+     }
+   },false);
+   document.querySelector("form").addEventListener("submit",function(e){
+     e.preventDefault();
+     loadMPD(true);
+   },false);
+   document.querySelector("input").value = document.querySelector("select").     options.item(1).value;
+   loadMPD(false);
+ </script>
+ 
+ <script type="text/javascript">
+ if (jwplayer().id) {
+     jwplayer().on('ready', function() {
+         document.getElementById('demo-player-version').innerHTML = jwplayer.    version.split('+')[0];
+     });
+ }
+ </script>
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35378516-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<br>
+<div style="color:white;text-align:center;">
+<script language="javascript" type="text/javascript">
+document.write(Date())
+</script>
+</div>
+
+<script type="text/javascript">
+ 
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-35378516-1']);
+   _gaq.push(['_trackPageview']);
+ 
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async =     true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.  google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+ 
+ </script>
+
+</body>
+</html>
